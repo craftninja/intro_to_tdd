@@ -4,6 +4,15 @@ class FizzBuzz
   end
 
   def array_maker
-    1.upto(@upper_limit).to_a
+    fizz_buzz_array = 1.upto(@upper_limit).to_a
+    i=0
+    while i < @upper_limit
+      case
+        when fizz_buzz_array[i]%3 == 0
+          fizz_buzz_array[i]= "Fizz"
+      end
+      i+=1
+    end
+    fizz_buzz_array
   end
 end
