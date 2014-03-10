@@ -8,6 +8,8 @@ class FizzBuzz
     i=0
     while i < @upper_limit
       case
+        when fizz_buzz_array[i]%15 == 0
+          fizz_buzz_array[i] = "FizzBuzz"
         when fizz_buzz_array[i]%3 == 0
           fizz_buzz_array[i] = "Fizz"
         when fizz_buzz_array[i]%5 == 0
