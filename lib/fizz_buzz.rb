@@ -3,7 +3,7 @@ class FizzBuzz
     @upper_limit = upper_limit
   end
 
-  def fizz
+  def array_maker
     1.upto(@upper_limit).to_a
   end
 end
