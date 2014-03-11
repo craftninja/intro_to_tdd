@@ -5,6 +5,14 @@ class OddEven
 
   def arrayify
     @odds_or_evens_array = 1.upto(@max_num).to_a
+    i=0
+    @odds_or_evens_array.each {|x|
+      case
+        when x%2 == 0
+          @odds_or_evens_array[i] = "even"
+      end
+      i+=1
+    }
 
   end
 end
