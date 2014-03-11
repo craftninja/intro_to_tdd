@@ -11,7 +11,6 @@ describe LeapYear do
     expect(@leap_year.yes?).to eq false
   end
   it "calculates if 2000 is a leap year (yes)" do
-    pending
     @leap_year = LeapYear.new(2000)
     expect(@leap_year.yes?).to eq true
   end
