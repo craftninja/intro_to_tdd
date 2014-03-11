@@ -8,4 +8,7 @@ class KeyValueStore
   def check_store
     @store
   end
+  def delete_one(k)
+    @store.delete(k)
+  end
 end

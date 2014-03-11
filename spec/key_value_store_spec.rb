@@ -17,4 +17,9 @@ describe KeyValueStore do
   it "will return a value for a specified key" do
     expect(@newstore.check_store["some key"]).to eq "some value"
   end
+
+  it "will delete a single key" do
+    @newstore.delete_one("some key")
+    expect(@newstore.check_store["some key"]).to eq nil
+  end
 end
