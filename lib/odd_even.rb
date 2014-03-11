@@ -1,10 +1,10 @@
 class OddEven
-  def initialize (i)
-    @i=i
-    @max_num = i
+  def initialize (max_num)
+    @max_num = max_num
   end
 
   def arrayify
-    @odds_or_evens_array = 1.upto(@i).to_a
+    @odds_or_evens_array = 1.upto(@max_num).to_a
+
   end
 end
