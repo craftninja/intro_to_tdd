@@ -7,8 +7,7 @@ describe StringSum do
     expect(@sum_me_up.call_it).to eq "1,2,3"
   end
   it "puts zero for an empty string" do
-    pending
     @sum_me_up = StringSum.new("")
-    expect(@sum_me_up).to eq 0
+    expect(@sum_me_up.added(",")).to eq 0
   end
 end
