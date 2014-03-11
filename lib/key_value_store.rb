@@ -18,4 +18,7 @@ class KeyValueStore
     end
     key_list
   end
+  def delete_all
+    @store = {}
+  end
 end
