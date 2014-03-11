@@ -22,4 +22,8 @@ describe KeyValueStore do
     @newstore.delete_one("some key")
     expect(@newstore.check_store["some key"]).to eq nil
   end
+
+  it "will create an array of all the keys" do
+    expect(@newstore.key_lister).to eq ["some key", "other key"]
+  end
 end

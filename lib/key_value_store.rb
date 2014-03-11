@@ -11,4 +11,11 @@ class KeyValueStore
   def delete_one(k)
     @store.delete(k)
   end
+  def key_lister
+    key_list = []
+    @store.each do |k,v|
+      key_list << k
+    end
+    key_list
+  end
 end
