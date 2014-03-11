@@ -12,6 +12,6 @@ describe StringSum do
   end
   it "turns a string into an array of numbers" do
     @sum_me_up = StringSum.new("1,2,3")
-    expect(@sum_me_up.call_it).to eq "1,2,3"
+    expect(@sum_me_up.added(",")).to eq [1, 2, 3]
   end
 end
