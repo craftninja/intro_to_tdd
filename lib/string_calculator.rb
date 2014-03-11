@@ -14,7 +14,11 @@ class StringSum
       string_to_add.each {|x|
         number_to_add<<x.to_i
       }
-      number_to_add
+      sum = 0
+      number_to_add.each {|x|
+        sum = sum + x
+      }
+      sum
     end
   end
 
