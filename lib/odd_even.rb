@@ -10,6 +10,8 @@ class OddEven
       case
         when x%2 == 0
           @odds_or_evens_array[i] = "even"
+        else
+          @odds_or_evens_array[i] = "odd"
       end
       i+=1
     }
