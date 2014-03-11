@@ -14,4 +14,8 @@ class NumericCalc
   def memory
     @mem
   end
+
+  def memory_clear
+    @mem = 0
+  end
 end

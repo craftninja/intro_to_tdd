@@ -22,5 +22,11 @@ describe NumericCalc do
     calculator.save(9)
     expect(calculator.memory).to eq 9
   end
-  
+
+  it "allows users to clear the calculator's memory. When the memory is empty, 'memory' returns 0." do
+    calculator = NumericCalc.new
+    expect(calculator.memory_clear).to eq 0
+    expect(calculator.memory).to eq 0
+  end
+
 end
