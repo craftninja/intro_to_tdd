@@ -29,4 +29,9 @@ describe NumericCalc do
     expect(calculator.memory).to eq 0
   end
 
+  it "When a calculator is initialized, the memory value is 0." do
+    calculator = NumericCalc.new
+    expect(calculator.memory).to eq 0
+  end
+
 end

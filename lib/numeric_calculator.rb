@@ -1,4 +1,8 @@
 class NumericCalc
+  def initialize
+    @mem = 0
+  end
+  
   def add(num_a, num_b)
     num_a+num_b
   end
