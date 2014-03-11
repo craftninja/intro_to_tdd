@@ -10,4 +10,8 @@ class NumericCalc
   def save(num_a)
     @mem = num_a
   end
+
+  def memory
+    @mem
+  end
 end
