@@ -12,5 +12,9 @@ describe NumericCalc do
     expect(calculator.subtract(9, 6)).to eq 3
   end
 
+  it "allows users to save a number to the calculator's memory." do
+    calculator = NumericCalc.new
+    expect(calculator.save(9)). to eq 9
+  end
 
 end
