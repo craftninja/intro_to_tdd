@@ -4,7 +4,7 @@ class LeapYear
   end
 
   def yes?
-    @year%4 == 0
+    (@year%4 == 0) && !(@year%100 == 0)
   end
 end
 
